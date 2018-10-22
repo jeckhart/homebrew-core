@@ -18,6 +18,7 @@ class LastpassCli < Formula
   depends_on "cmake" => :build
   depends_on "docbook-xsl" => :build
   depends_on "pkg-config" => :build
+  depends_on "curl" if MacOS.version >= :mojave
   depends_on "openssl"
   depends_on "pinentry" => :optional
 
